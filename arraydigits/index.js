@@ -54,5 +54,5 @@ const incrementRecurs = (input, level) => {
     }
 }
 
-const incrementedRecurs = incrementRecurs(input, input.length - 1);
+incrementRecurs(input, input.length - 1);
 console.log('[RESULT][RECURS VERSION]: ', input);

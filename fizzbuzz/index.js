@@ -1,7 +1,7 @@
 // By doing this exercise I wanted to get the right balance bewteen simplicity, 
 // scalability and human understanding
 
-// Let's pretend we have to following rule:
+// Let's pretend we have the following rule:
 
 // We want a program that takes an object of rules: For each key (number) we get a message.
 // The program loops between 1 and N.
@@ -24,7 +24,7 @@ const messageHandler = (number, rules) => {
     const message = Object.keys(rules).reduce((output, rule) => {
 
         if (divisibleBy(number, rule)) {
-            // We give a little check: if output is still a number we reset it (erase default rule)
+            // We give a little check: if output is a number we reset it (erase default rule)
             isNaN(output) ? output += rules[rule] : output = rules[rule];
         }
 
